@@ -42,7 +42,8 @@ ul {
 	float: left;
 	display: inline-block;
 	height: 220px;
-	width: 295px;
+	width: 275px;
+	margin-left: 24px;
 	border-left-width: 5px;
 	border-left-color: black;
 	border-left-style: solid;
@@ -66,6 +67,8 @@ ul {
 	text-align: left;
 	margin-left: 80px;
 	padding-top: 25px;
+	border-right-width: 5px;
+	border-right-style: solid;
 }
 
 .content p {
@@ -86,6 +89,7 @@ ul {
 
 .ttl2 {
 	padding-left: 45px;
+	font-style: italic;
 }
 
 .ttl2 a {
@@ -113,7 +117,7 @@ ul {
 	height: 150px;
 	padding-top: 200px;
 	text-align: center;
-	color: #DDDDDD;
+	color: #AAAAAA;
 }
 
 #navbar {
