@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Happy Birthday!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="./css/custom.css">
+</head>
+<body>
+<div class="site-wrapper">
+		<div class="container">
+			<div class="jumbotron" style="text-align: center; display: none;">
+				<h1>HAPPY</h1>
+				<h1>BIRTHDAY!</h1>	
+			</div>
+		</div>
+	<!--====== CIRCLE PORTRAITS ======-->
+	<div class="container marketing">
+    <div class="row" style="text-align:center;">
+      <br/>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2" id="left" style="display: none;">
+        <br/>
+        <img class="img-circle" src="./img/jake.jpg" alt="Jake" style="width: 180px; height: 180px;">
+      </div>
+      <div class="col-lg-4" id="mid" style="display: none;">
+        <br/>
+        <img class="img-circle" src="./img/ryan.jpg" alt="Ryan" style="width: 180px; height: 180px;">
+      </div>
+      <div class="col-lg-2" id="right" style="display: none;">
+        <br/>
+        <img class="img-circle" src="./img/tom.jpg" alt="Tom" style="width: 180px; height: 180px;">
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+    <br/><br/>
+    <div class="container" id="aftertxt" style="display: none;">
+    	<h1>From all of us!</h1>
+    	<h2>Love, Ryan</h2>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/>
+  </div>
+</div>
+<audio controls autoplay>
+	<source src="hbd.mp3" type="audio/mp3">
+</audio>
+<script>
+	$(document).ready(function(){
+		$('.jumbotron').slideDown('slow', function() {
+			$('#left').fadeIn('slow', function() {
+				$('#mid').fadeIn('slow', function() {
+					$('#right').fadeIn('slow', function() {
+						$('#aftertxt').fadeIn('slow');
+					});
+				});
+			});
+		});
+	});
+</script>
+</body>
+</html>
