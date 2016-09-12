@@ -1,54 +1,84 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-
 <head>
-	<link rel="stylesheet" href="css/homestyle.css" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<meta charset = "utf-8">
-	<title>Ryan Havens</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/homestyle.css" type="text/css">
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<title>Hello</title>
 </head>
 
 <body>
+  <div id="body-border"></div>
 	<div id="wrapper">
 		<div id="header">
 			<div class="nav">
 				<h1>Ryan Havens</h1>
-				<a href="index.html" style="color:#FF9900;">Home</a>
-				<a href="https://github.com/rhavens">Github</a>
-				<a href="bio.html">About</a>
-				<a href="resume.html">Resume</a>
+  				<ul>
+	    			<li class='active'><a href="index.html">Home</a></li>
+    				<li><a href="https://github.com/rhavens">Github</a></li>
+					<li><a href="bio.html">About</a></li>
+					<li><a href="resume.html">Resume</a></li>
+				</ul>
 			</div>
 		</div>
-	</div>
-	<div class="div-center">
-		<div class="content">
-			<p class="ttl">Hi, my name is Ryan Havens. All my life, I’ve known I wanted to become a programmer.</p>
-			<p class="ttl">One day, as I lay in my cradle debugging some C++ classes, it all made perfect sense to me. Programming is my calling, technology my passion, development my labor.</p>
-			<p class="ttl">Current Projects</p>
-			<p class="ttl2"><a href="#">This Website</a></p>
-			<p class="blt">Redesigning this website to reflect my design skills towards a professional audience.</p>
-			<p class="ttl2"><a href="http://subleasy-site.herokuapp.com">Subleasy</a></p>
-			<p class="blt">For a class project I collaborated with a team of Tufts students to develop a business model and financial plan for our grand idea, a student-to-student subletting service. On my own I brought the project to fruition, and Subleasy provides a much-needed convenience to Tufts students seeking off-campus housing for a few months at a time.</p>
-			<p class="ttl2"><a href="http://zbtomicron.github.io/">ZBT Omicron Homepage</a></p>
-			<p class="blt">Managing the homepage for my fraternity, Zeta Beta Tau. Our website is the most easily accessible resource for potential recruits and others looking to learn more about us and what we contribute to the community.</p>
-			<p class="ttl">Past Projects</p>
-			<p class="ttl2"><a href="http://piper.link">Piper: A Social Media Experiment</a></p>
-			<p class="blt">Designing and implementing a social media website with emphasis on scalability, optimization, and security as part of a web engineering team. Piper allows users to post images to a central feed and talk to other users in a live chatfeed. We emphasized single-page design with this project.</p>
-			<p class="ttl2"><a href="https://github.com/rhavens/GroovebackupPlus">GroovebackupPlus</a></p>
-			<p class="blt">A project that unfortunately had to be iced due to Grooveshark's abrupt shutdown. A tool that helps users navigate past common issues with Grooveshark. Using the website Groovebackup as a data source, GroovebackupPlus describes which songs have been removed due to takedown notices and which songs you have recently added.</p>
-			<p class="ttl2"><a href="http://bodybuddy.herokuapp.com">BodyBuddy</a></p>
-			<p class="blt">A fitness-tracking program that aggregates a user's health and workout preferences in order to design a customized fitness routine for the user. Currently not available for testing.</p>
-			<p class="ttl2"><a href="http://coursecomparator.herokuapp.com">Tufts Course Online Comparator</a></p>
-			<p class="blt">A webservice for Tufts students allowing them to compare the difficulty of their courseload and submit their own opinions on classes. Built at Tufts Polyhack Fall 2014.</p>
-			<p class="ttl2">Various University Assignments</p>
-			<p class="blt">I have completed coursework in multiple programming languages and disciplines during my three years at Tufts. In order to maintain academic integrity, these projects are not listed on my public github repository.</p>
-			<p class="ttl2">If you have further inquiries, please contact me.</p>
+		<div class="center">
+			<div class="content">
+				<div id="content-intro">
+					<p class="title">Hi, my name is Ryan Havens. All my life, I’ve known I wanted to become a programmer.</p>
+					<p class="title">One day, as I lay in my cradle debugging some C++ classes, it all made perfect sense to me. Programming is my calling, technology my passion, development my labor.</p>
+				</div>
+				<div class='content-body projects'>
+					<div id="current-projects">
+						<p class="title">Current Projects</p>
+						<div class="project">
+							<p class="subtitle"><a href="#">This Website</a></p>
+							<p class="blt">Redesigning this website to reflect my design skills towards a professional audience.</p>
+						</div>
+						<div class="project">
+							<p class='subtitle'><a href='https://facethemusic.herokuapp.com/'>face.the.music</a></p>
+							<p class='blt'>face.the.music is a fun lititlee webapp that recognizes facial expressions and plays music according to your detected emotional state. The project came about as some hacky combination of working with the Spotify API (which I wanted to do) and working with facial recognition libraries (co-founder Gain Hagenau's idea). Somehow it caught on - people seem to find this kind of thing at least mildly amusing, and the music it plays seems to pair quite well (according to user feedback).</p>
+						<div class="project">
+							<p class="subtitle"><a href="http://subleasy-site.herokuapp.com/">Subleasy</a></p>
+							<p class="blt">For a class project I collaborated with a team of Tufts students to develop a business model and financial plan for our grand idea, a student-to-student subletting service. On my own I brought the project to fruition, and Subleasy provides a much-needed convenience to Tufts students seeking off-campus housing for a few months at a time.</p>
+						</div>
+					</div>
+					<div id="past-projects">
+						<p class="title">Past Projects</p>
+						<div class="project">
+							<p class="subtitle"><a href="http://piper.link/">Piper: A Social Media Experiment</a></p>
+							<p class="blt">Designing and implementing a social media website with emphasis on scalability, optimization, and security as part of a web engineering team. Piper allows users to post images to a central feed and talk to other users in a live chatfeed. We emphasized single-page design with this project.</p>
+						</div>
+						<div class="project">
+							<p class="subtitle"><a href="https://github.com/rhavens/GroovebackupPlus">GroovebackupPlus</a></p>
+							<p class="blt">A project that unfortunately had to be iced due to Grooveshark's abrupt shutdown. A tool that helps users navigate past common issues with Grooveshark. Using the website Groovebackup as a data source, GroovebackupPlus describes which songs have been removed due to takedown notices and which songs you have recently added.</p>
+						</div>
+						<div class="project">
+							<p class="subtitle"><a href="http://bodybuddy.herokuapp.com/">BodyBuddy</a></p>
+							<p class="blt">A fitness-tracking program that aggregates a user's health and workout preferences in order to design a customized fitness routine for the user. Currently not available for testing.</p>
+						</div>
+						<div class="project">
+							<p class="subtitle"><a href="http://coursecomparator.herokuapp.com/">Tufts Course Online Comparator</a></p>
+							<p class="blt">A webservice for Tufts students allowing them to compare the difficulty of their courseload and submit their own opinions on classes. Built at Tufts Polyhack Fall 2014.</p>
+						</div>
+						<div class="project">
+							<p class="subtitle"><a href='https://github.com/rhavens'>Various University Assignments</a></p>
+							<p class="blt">I have completed coursework in multiple programming languages and disciplines during my three years at Tufts. In order to maintain academic integrity, these projects are not listed on my public github repository.</p>
+						</div>
+					</div>
+				</div>
+				<p class="subtitle">Please feel free to contact me if you have further inquiries!</p>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div id="footer">
-		<p>Ryan Havens | Tufts 2017</p>
-	</div>
-</body>
+		<div id="footer">
+			<p>Ryan Havens | Tufts 2017</p>
+		</div>
+	
 
+
+	</body>
 </html>
